@@ -1,0 +1,44 @@
+.center {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.timeTableDay {
+    background-color : #DBEFF0;
+}
+
+.basicStats {
+    background-color: #FD6F6E;
+
+}
+
+.lHJ {
+    background-color: #FEFA09;
+}
+
+.kHO {
+    background-color: #FFC000;
+}
+
+.poli {
+    background-color: #FFCCCB;
+}
+
+.pSK {
+    background-color: #01B0F1;
+}
+
+.lHS {
+    background-color: #00B052;
+}
+
+.club {
+    background-color: #E2EFDB;
+}
+
+.project {
+    background-color: #FFF2CE;
+}
