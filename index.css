@@ -43,16 +43,48 @@ td {
     background-color: #FFF2CE;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "menu menu menu"
-        "introduction study myTeam"
-    ;
-    grid-template-rows: 10% 10% auto;
-    grid-template-columns: 30% 50% 20%;
+@media screen and (min-width:960px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "menu menu menu"
+            "introduction study myTeam"
+        ;
+        grid-template-rows: 10% 10% auto;
+        grid-template-columns: 30% 50% 20%;
+    }
 }
+
+@media screen and (min-width:641px) and (max-width:959px){
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "menu menu"
+            "introduction introduction"
+            "study myTeam"
+        ;
+        grid-template-rows: 10% 10% auto auto;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width:640px){
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "menu"
+            "introduction"
+            "study"
+            "myTeam"
+        ;
+        grid-template-rows: 10% 10% auto auto auto;
+        grid-template-columns: 100%;
+    }
+}
+
 
 header {
     grid-area: header;
@@ -84,16 +116,21 @@ body {
 
 .delSpot {
     list-style-type: none;
+}
+
+.flex-space-around{
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
 }
 
-.menuLink {
+.link {
     display: block;
+    border: 1px solid;
     text-decoration: none; /* 링크의 밑줄을 제거 */
-    padding: 20px; /* 상하좌우 패딩을 통해 요소 사이의 간격을 조정 */
+    padding: 1rem; /* 상하좌우 패딩을 통해 요소 사이의 간격을 조정 */
+    margin: 1rem;
     text-align: center; /* 텍스트를 중앙 정렬 */
-    background-color: #00B052;
+    color: black;
 }

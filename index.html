@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" media="screen">
 </head>
 
 <body>
@@ -14,10 +14,10 @@
             <h1 class="center">이지수의 홈페이지</h1>
         </header>
         <menu>
-            <ul class="delSpot">
-                <li><a href="#introduction" class="menuLink">내 소개</a></li>
-                <li><a href="#study" class="menuLink">SW 공부</a></li>
-                <li><a href="#myTeam" class="menuLink">프로젝트 팀원</a></li>
+            <ul class="flex-space-around">
+                <li class="delSpot"><a href="#introduction" class="link">내 소개</a></li>
+                <li class="delSpot"><a href="#study" class="link">SW 공부</a></li>
+                <li class="delSpot"><a href="#myTeam" class="link">프로젝트 팀원</a></li>
             </ul>
         </menu>
         <introduction>
@@ -106,11 +106,11 @@
                     <td></td>
                 </tr>
             </table>
-            <ul>
-                <a href="https://www.acmicpc.net/user/cakalu" target="_blank">
+            <ul class="delSpot">
+                <a href="https://www.acmicpc.net/user/cakalu" target="_blank" class="link">
                     <li>나의 BOJ 현황</li>
                 </a>
-                <a href="https://github.com/ljsuuuuuuuu" target="_blank">
+                <a href="https://github.com/ljsuuuuuuuu" target="_blank" class="link">
                     <li>나의 GitHub 현황</li>
                 </a>
             </ul>
@@ -119,19 +119,15 @@
         <myTeam>
             <a name="myTeam"></a>
             <h3>나랑 같이 프로젝트를 하고 있는 팀원</h3>
-            <ul>
-                <a href="https://github.com/tpdus751" target="_blank">
-                    <li>박세연</li>
-                </a>
-                <a href="https://github.com/Je0ngaram" target="_blank">
-                    <li>전가람</li>
-                </a>
-                <a href="https://github.com/sso05098" target="_blank">
-                    <li>김범준</li>
-                </a>
-                <a href="https://github.com/florencesy02" target="_blank">
-                    <li>서영</li>
-                </a>
+            <ul class="delSpot">
+                <li><a href="https://github.com/tpdus751" class="link" target="_blank">박세연</a></li>
+
+                <li><a href="https://github.com/Je0ngaram" class="link" target="_blank">전가람</a></li>
+
+                <li><a href="https://github.com/sso05098" class="link" target="_blank">김범준</a></li>
+
+                <li><a href="https://github.com/florencesy02" class="link" target="_blank">서영</a></li>
+
             </ul>
         </myTeam>
 </body>
