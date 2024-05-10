@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Karma", sans-serif
+        }
+
+        .w3-bar-block .w3-bar-item {
+            padding: 20px
+        }
+
+        .timeTableDiv {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .timeTable {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-container {
+            display: flex;
+            padding: 0 16rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flex-center {
+            flex-grow: 1;
+            justify-items: center;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .timeTableDay {
+            background-color: #DBEFF0;
+        }
+
+        .basicStats {
+            background-color: #FD6F6E;
+
+        }
+
+        .lHJ {
+            background-color: #FEFA09;
+        }
+
+        .kHO {
+            background-color: #FFC000;
+        }
+
+        .poli {
+            background-color: #FFCCCB;
+        }
+
+        .pSK {
+            background-color: #01B0F1;
+        }
+
+        .lHS {
+            background-color: #00B052;
+        }
+
+        .club {
+            background-color: #E2EFDB;
+        }
+
+        .project {
+            background-color: #FFF2CE;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+        style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+        <a href="#music" onclick="w3_close()" class="w3-bar-item w3-button">Music</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-right w3-padding-16">ljsuu</div>
+            <div class="w3-center w3-padding-16">Music</div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-center" id="music">
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lPdN-2_fn-35VD5I8PPuUwgtrrQAsl9vo"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/an_XTRA_UUGLY_Mixtape.jpg" alt="an_XTRA_UUGLY_Mixtape"
+                        style="width:75%">
+                </a>
+                <h3>an XTRA UUGLY Mixtape</h3>
+                <h3>DUCKWRTH</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_l4soA6akqEXUNiZP1TQ4eL7cSrGKfylIA"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Alone_at_Prom.jpg" alt="Alone_at_Prom" style="width:75%">
+                </a>
+                <h3>Alone at Prom</h3>
+                <h3>Tory Lanes</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lwaD8UXRautA8W9eWT4zZOvwf5Ktxpax8"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/After_Hours.jpg" alt="After_Hours" style="width:75%">
+                </a>
+                <h3>After Hours</h3>
+                <h3>The Weeknd</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lvHGRTDpdqrjcPREd48clqg7LczQ-Fk7o"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Ballads_1.webp" alt="Ballads_1" style="width:75%">
+                </a>
+                <h3>Ballads 1</h3>
+                <h3>Joji</h3>
+            </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_n9GBtFLVfAOwpQWGMpLpvmtxSENrpLazg"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/An_Evening_With_Silk_Sonic.jpg"
+                        alt="An_Evening_With_Silk_Sonic" style="width:75%">
+                </a>
+                <h3>An Evening <br>With Silk Sonic</h3>
+                <h3>Silk Sonic</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_kClWWfWghQXro7ONQ-DfH3RZ1oxiu0kMA"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Blonde.jpg" alt="Blonde" style="width:75%">
+                </a>
+                <h3>Blonde</h3>
+                <h3>Frank Oceon</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_mlz0XdHjgFO8gVxdQD94aCHsEfpUlgJJ0"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Harry's_House.jfif" alt="Harry's_House" style="width:75%">
+                </a>
+                <h3>Harry's House</h3>
+                <h3>Harry Styles</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lXMDMvVniP2CYwBI6kM7mCNOl2NCBPpuE"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Justice.jpg" alt="Justice" style="width:75%">
+                </a>
+                <h3>Justice</h3>
+                <h3>Justin Bieber</h3>
+            </div>
+        </div>
+
+        <!-- Third Photo Grid-->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lV-0IGwZFvrUZsyFbcdOlP9202EWUGAjY"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Birds_in_the_trap_sing_mcknight.jpg"
+                        alt="Birds_in_the_trap_sing_mcknight" style="width:75%">
+                </a>
+                <h3>Birds in the <br>Trap Sing McKnight</h3>
+                <h3>Travis Scott</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_m6xt1ZipEd_hALlmTOFY6S9OORu5LqPqc"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/ASTROWORLD.jpg" alt="ASTROWORLD" style="width:75%">
+                </a>
+                <h3>ASTROWORLD</h3>
+                <h3>Travis Scott</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_kuacL0QRljgqykfnQITDgY67E3knZ-wpE"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Heroes&Villains.jpg" alt="Heroes&Villains" style="width:75%">
+                </a>
+                <h3>Heroes & Villains</h3>
+                <h3>Metro Boomin</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_niRhloJWXiq5b2d7BQ7lGSdl9MESqmibU"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/JackBoys.jpg" alt="JACKBOYS" style="width:75%">
+                </a>
+                <h3>JACKBOYS</h3>
+                <h3>JACKBOYS</h3>
+            </div>
+        </div>
+
+        <!-- Fourth Photo Grid-->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lu1EY8nGVUfXmMe0oXBMX5hzMhyT_ekrg"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/KAYTRAMINE.jpg" alt="KAYTRAMINÉ" style="width:75%">
+                </a>
+                <h3>KAYTRAMINÉ</h3>
+                <h3>KAYTRAMINÉ</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_mRFuqe0IIrexXkU7JOxo4rOb0WLEcwuz8"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/MBDTF.jpg" alt="My_Beautiful_Dark_Twisted_Fantasy"
+                        style="width:75%">
+                </a>
+                <h3>My Beautiful Dark Twisted Fantasy</h3>
+                <h3>Kanye West</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_mpTXT8bcs7ddIHu4TU6Yyf-wd4sL4AJ0M"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Rodeo.jpg" alt="Rodeo" style="width:75%">
+                </a>
+                <h3>Rodeo</h3>
+                <h3>Travis Scott</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_n5vK9vVwXG_0C1opXOGFSQucOZ4Rer1X0"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/The_Melodic_Blue.jfif" alt="The_Melodic_Blue"
+                        style="width:75%">
+                </a>
+                <h3>The Melodic Blue</h3>
+                <h3>Baby Keem</h3>
+            </div>
+        </div>
+
+        <!-- Fifth Photo Grid-->
+
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_k7FTSn7ydw3cNY9X5w2UJYVO7fLXPDTik"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Currents.jpg" alt="Currents" style="width:75%">
+                </a>
+                <h3>Currents</h3>
+                <h3>Tame Impala</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_mzNq8r8bzxVYwBVKH7JKoVJo0WaPU29UU"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Euphonyus.jpg" alt="Euphonyus" style="width:75%">
+                </a>
+                <h3>Euphonyus</h3>
+                <h3>Phony PPL</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lFT9sQte1ajfUk3lCO0UqdqIkQvNW5ayY"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Malibu.jpg" alt="Malibu" style="width:75%">
+                </a>
+                <h3>Malibu</h3>
+                <h3>Anderson .Paak</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lH7jrlcfWi4s682Z9gDupYf1iW-qAQ3hQ"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/The_Slow_Rush.jpg" alt="The_Slow_Rush" style="width:75%">
+                </a>
+                <h3>The Slow Rush</h3>
+                <h3>Tame Impala</h3>
+            </div>
+        </div>
+
+        <!-- Sixth Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_kZkzZQQmU_be1URgFp9yEbQQZ1zwYiuIE"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Ventura.jpg" alt="Ventura" style="width:75%">
+                </a>
+                <h3>Ventura</h3>
+                <h3>Anderson .Paak</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lngIO30NrPZTgLHnf6-bxRF3x99DXTySI"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Smithereens.jfif" alt="Smithereens" style="width:75%">
+                </a>
+                <h3>Smithereens</h3>
+                <h3>Joji</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_mOMo8Ji8_xez5ZZPXnfxqGd_DGi03107c"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/SOS.jpeg" alt="SOS" style="width:75%">
+                </a>
+                <h3>SOS</h3>
+                <h3>SZA</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_kz_hW_g_px0O_iPxB6iz7wNlh8fN__7mM"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Painted.jpg" alt="Painted" style="width:75%">
+                </a>
+                <h3>Painted</h3>
+                <h3>Lucky Daye</h3>
+            </div>
+        </div>
+
+        <!-- Seventh Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_m6VFZd8KNhbFoHGRhtzFakGNVSkMMGvbU"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Yeezus.jpg" alt="Yeezus" style="width:75%">
+                </a>
+                <h3>Yeezus</h3>
+                <h3>Kanye West</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_kOG9LyZdKu4XfTVDN21R1TFc8aC_dtfD8"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/킁.jpg" alt="KEUNG" style="width:75%">
+                </a>
+                <h3>KEUNG</h3>
+                <h3>C JAMM</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_n_dmtzA0IWImBN3fbUBUl_WgD-YSaMZaI"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/To_Pimp_A_Butterfly.jpg" alt="To_Pimp_A_Butterfly"
+                        style="width:75%">
+                </a>
+                <h3>To Pimp A Butterfly</h3>
+                <h3>Kendrick Lamar</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_lrku1MxBO9YtnXfgi8tLik4mqXNXwXsdQ"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Never_Enough.webp" alt="Never_Enough" style="width:75%">
+                </a>
+                <h3>NEVER ENOUGH</h3>
+                <h3>Daniel Caesar</h3>
+            </div>
+        </div>
+
+        <!-- Eighth Photo Grid-->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-quarter">
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_nyTUiuCiFkZ-mfRpHJjNZ2mfZtbKRK-8E"
+                    target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image/Pilgrim's_Paradise.webp" alt="Pilgrim's_Paradise"
+                        style="width:75%">
+                </a>
+                <h3>Pilgrim's Paradise</h3>
+                <h3>Daniel Caesar</h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="" target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image" alt="" style="width:75%">
+                </a>
+                <h3></h3>
+                <h3></h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="" target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image" alt="" style="width:75%">
+                </a>
+                <h3></h3>
+                <h3></h3>
+            </div>
+            <div class="w3-quarter">
+                <a href="" target="_blank">
+                    <img src="/HTMLCSS/My_Homepage/image" alt="" style="width:75%">
+                </a>
+                <h3></h3>
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center">
+        <div class="w3-bar">
+            <a class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a class="w3-bar-item w3-button w3-hover-black">1</a>
+            <a class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a class="w3-bar-item w3-button w3-hover-black">»</a>
+        </div>
+    </div>
+
+    <hr id="about">
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32 w3-center">
+        <div class="flex-container">
+            <h3 class="flex-center">TimeTable</h3>
+        </div>
+        <div class="w3-padding-32">
+            <div class="timeTableDiv">
+                <table border="1" class="timeTable">
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td class="timeTableDay">월</td>
+                        <td class="timeTableDay">화</td>
+                        <td class="timeTableDay">수</td>
+                        <td class="timeTableDay">목</td>
+                        <td class="timeTableDay">금</td>
+                    </tr>
+                    <tr>
+                        <td>1교시<br>09:00 ~ 09:50</td>
+                        <td class="basicStats" rowspan="3">기초통계<br>이효재</td>
+                        <td class="lHJ" rowspan="2">알고리즘<br>이혜정</td>
+                        <td class="lHJ" rowspan="2">인터페이스<br>디자인<br>이혜정</td>
+                        <td class="kHO" rowspan="3">컴퓨터구조<br>(+운영체제)<br>김형오</td>
+                        <td class="poli" rowspan="3">[교양]<br>참인폴리텍</td>
+                    </tr>
+                    <tr>
+                        <td>2교시<br>10:00 ~ 10:50</td>
+                    </tr>
+                    <tr>
+                        <td>3교시<br>11:00 ~ 11:50</td>
+                        <td class="lHJ">JAVA기초<br>이혜정</td>
+                        <td class="lHJ">알고리즘<br>이혜정</td>
+                    </tr>
+                    <tr>
+                        <td>4교시<br>12:00 ~ 12:50</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5교시<br>12:50 ~ 1:40</td>
+                        <td class="lHJ" rowspan="2">JAVA기초<br>이혜정</td>
+                        <td class="pSK" rowspan="3">데이터베이스<br>팽성권</td>
+                        <td class="basicStats" rowspan="2">발명과창업<br>이효재</td>
+                        <td class="lHS" rowspan="2">산업안전관리<br>(정보보안)<br>이현순</td>
+                        <td class="poli" rowspan="3">[교양]<br>참인폴리텍</td>
+                    </tr>
+                    <tr>
+                        <td>6교시<br>1:50 ~ 2:40</td>
+                    </tr>
+                    <tr>
+                        <td>7교시<br>2:50 ~ 3:40</td>
+                        <td class="lHJ">인터페이스<br>디자인<br>이혜정</td>
+                        <td class="poli" rowspan="2">[교양] 영어</td>
+                        <td class="club" rowspan="3">동아리<br>(코딩, 자격증)</td>
+                    </tr>
+                    <tr>
+                        <td>8교시<br>3:50 ~ 4:40</td>
+                        <td class="project" rowspan="2">융합프로젝트</td>
+                        <td class="club" rowspan="2">동아리<br>(코딩, 자격증)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9교시<br>4:50 ~ 5:40</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4 class="w3-padding-32"><b>Music is my life...</b></h4>
+
+        </div>
+    </div>
+    <hr>
+
+    <!-- Footer -->
+    <footer class="w3-row-padding w3-padding-32">
+        <div class="w3-third">
+            <p>Major : AISW</p>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            <p>180 75</p>
+        </div>
+
+        <div class="w3-third">
+            <h3>My Team</h3>
+            <ul class="w3-ul w3-hoverable">
+                <a href="">
+                    <li class="w3-padding-16">
+
+                        <span class="w3-large">Lorem</span><br>
+                        <span>Sed mattis nunc</span>
+                    </li>
+                </a>
+                <li class="w3-padding-16">
+                    <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                    <span class="w3-large">Ipsum</span><br>
+                    <span>Praes tinci sed</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-third w3-serif">
+            <h3>Interested In</h3>
+            <p>
+                <span class="w3-tag w3-black w3-margin-bottom">Music</span> <span
+                    class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Travel</span> <span
+                    class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Food</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentIndex = 1; // 현재 페이지 인덱스
+            var itemsPerPage = 8; // 페이지 당 아이템 수
+            var totalPages = Math.ceil(document.querySelectorAll(".w3-quarter").length / itemsPerPage); // 총 페이지 수
+
+            function showPage(page) {
+                var items = document.querySelectorAll(".w3-quarter");
+                var start = (page - 1) * itemsPerPage;
+                var end = start + itemsPerPage;
+
+                // 모든 아이템을 숨깁니다.
+                items.forEach(function (item) {
+                    item.style.display = 'none';
+                });
+
+                // 현재 페이지의 아이템만 보여줍니다.
+                for (var i = start; i < end && i < items.length; i++) {
+                    items[i].style.display = 'block';
+                }
+
+                currentIndex = page;
+                updatePaginationButtons();
+            }
+
+            function updatePaginationButtons() {
+                document.querySelectorAll(".w3-black").classList.remove("w3-black");
+
+                document.querySelectorAll(".w3-bar-item").forEach(function (button, index) {
+                    if (index === currentIndex) {
+                        button.classList.add("w3-black");
+                    }
+                });
+            }
+
+            document.querySelectorAll(".w3-bar-item").forEach(function (button, index) {
+                button.addEventListener("click", function () {
+                    if (this.innerText === '«' && currentIndex > 1) {
+                        showPage(currentIndex - 1);
+                    } else if (this.innerText === '»' && currentIndex < totalPages) {
+                        showPage(currentIndex + 1);
+                    } else if (!isNaN(parseInt(this.innerText))) {
+                        showPage(parseInt(this.innerText));
+                    }
+                });
+            });
+
+            showPage(1); // 초기 페이지 로드
+        });
+    </script>
+
+</body>
+
+</html>
