@@ -15,7 +15,15 @@
         h4,
         h5,
         h6 {
-            font-family: "Karma", sans-serif
+            font-family: "Karma", sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .small-img {
+            width: 7rem;
+            height: 7rem;
+            
         }
 
         .w3-bar-block .w3-bar-item {
@@ -27,16 +35,50 @@
             justify-content: space-around;
         }
 
-        .timeTable {
-            display: flex;
-            flex-direction: column;
+        table {
+            border-spacing : 0px;
         }
 
-        .flex-container {
+        .study-container {
             display: flex;
-            padding: 0 16rem;
-            justify-content: space-between;
-            align-items: center;
+            flex-flow: column;
+        }
+
+        .subject-container {
+            display: inline-flex;
+            align-self: center;
+            width: 60rem;
+            /* border: solid 1px; */
+            border-radius: 30px;
+            /* justify-content: space-evenly; */
+        }
+
+        .paddingRight3 {
+            padding-right: 3rem;
+        }
+
+        .subject-text-container {
+            display: inline-flex;
+            flex-flow: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .textLeft {
+            text-align: left;
+        }
+
+        .timetable-container {
+            display: flex;
+        }
+
+        .timeTable {
+            border: black solid 1px;
+            /* border-radius: 1rem; */
+        }
+
+        .border-bottom {
+            border-bottom: solid 1px;
         }
 
         .flex-center {
@@ -49,41 +91,103 @@
         }
 
         .timeTableDay {
-            background-color: #DBEFF0;
+            background-color: #dbeff098;
+        }
+        
+        .border-right {
+            border-right: solid 1px;
         }
 
         .basicStats {
-            background-color: #FD6F6E;
+            background-color: #fd6e6e98;
 
         }
 
         .lHJ {
-            background-color: #FEFA09;
+            background-color: #fefa0998;
         }
 
         .kHO {
-            background-color: #FFC000;
+            background-color: #FFC00098;
         }
 
         .poli {
-            background-color: #FFCCCB;
+            background-color: #FFCCCB98;
         }
 
         .pSK {
-            background-color: #01B0F1;
+            background-color: #01B0F198;
         }
 
         .lHS {
-            background-color: #00B052;
+            background-color: #00B05298;
         }
 
         .club {
-            background-color: #E2EFDB;
+            background-color: #E2EFDB98;
         }
 
         .project {
-            background-color: #FFF2CE;
+            background-color: #fff2ce;
         }
+
+        .testSection {
+            width: 100%;
+            border: solid #09acec60 1px;
+            border-radius: 1rem;
+        }
+        
+        .testScore {
+            background-color: #09acec60;
+            height: 2rem;
+            border-radius: 1rem;
+        }
+
+        .testScoreAlgorithm {
+            width: 94%;
+        }
+
+        .testScoreCS {
+            width: 87%;
+        }
+
+        .testScoreJava {
+            width: 99%;
+        }
+
+        .testScoreR {
+            width: 79%;
+        }
+
+        .testScoreDB {
+            width: 0%;
+        }
+
+        .testScoreID {
+            width: 94%;
+        }
+
+        .textRight {
+            text-align: right;
+        }
+        
+        .paddingRight1{
+            padding-right: 1rem;
+        }
+
+        .paddingLeft3{
+            padding-left: 3rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .footerDiv {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
     </style>
 </head>
 
@@ -93,8 +197,8 @@
     <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
         style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+        <a href="#study" onclick="w3_close()" class="w3-bar-item w3-button">Study</a>
         <a href="#music" onclick="w3_close()" class="w3-bar-item w3-button">Music</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
     </nav>
 
     <!-- Top menu -->
@@ -102,15 +206,194 @@
         <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
             <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
             <div class="w3-right w3-padding-16">ljsuu</div>
-            <div class="w3-center w3-padding-16">Music</div>
+            <div class="w3-center w3-padding-16">This is</div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-64 w3-center" id="study">
+
+        <div class="study-container">
+
+            <div class="subject-container w3-padding-32">
+                <div class="paddingRight3">
+                    <img src="image/ico-algorithm.png" alt="" class="small-img ">
+                </div>
+                <div class="subject-text-container">
+                    <h1 class="textLeft">Algorithm</h1>
+                    <h3>Test Score</h3>
+                    <div class="testSection">
+                        <div class="testScore testScoreAlgorithm">
+                            <h4 class="textRight paddingRight1">94</h4>
+                        </div>
+                    </div>
+                    <p class="textLeft">e.g., BookMarket</p>
+                </div>
+            </div>
+
+            <div class="subject-container w3-padding-32">
+                <div class="subject-text-container">
+                    <h2 class="textRight">Computer Structure</h2>
+                    <h3>Test Score</h3>
+                    <div class="testSection">
+                        <div class="testScore testScoreCS">
+                            <h4 class="textRight paddingRight1">208</h4>
+                        </div>
+                    </div>
+                    <p class="textRight">e.g., CPU-Scheduling</p>
+                </div>
+                <div class="paddingLeft3">
+                    <img src="image/ico-computer-structure.png" alt="" class="small-img">
+                </div>
+            </div>
+
+            <div class="subject-container w3-padding-32">
+                <div class="paddingRight3">
+                    <img src="image/ico-java.png" alt="" class="small-img">
+                </div>
+                <div class="subject-text-container">
+                    <h2 class="textLeft">Java</h2>
+                    <h3>Test Score</h3>
+                    <div class="testSection">
+                        <div class="testScore testScoreJava">
+                            <h4 class="textRight paddingRight1">99</h4>
+                        </div>
+                    </div>
+                    <p class="textLeft">e.g., BookMarket</p>
+                </div>
+            </div>
+
+            <div class="subject-container w3-padding-32">
+                <div class="subject-text-container">
+                    <h2 class="textRight">R Studio</h2>
+                    <h3>Test Score</h3>
+                    <div class="testSection">
+                        <div class="testScore testScoreR">
+                            <h4 class="textRight paddingRight1">71</h4>
+                        </div>
+                    </div>
+                    <p class="textRight">e.g., Statistics Analyze</p>
+                </div>
+                <div class="paddingLeft3">
+                    <img src="image/ico-rStudio.png" alt="" class="small-img">
+                </div>
+            </div>
+
+            <div class="subject-container w3-padding-32">
+                <div class="paddingRight3">
+                    <img src="image/ico-sqldev.png" alt="" class="small-img">
+                </div>
+                <div class="subject-text-container">
+                    <h2 class="textLeft">Database</h2>
+                    <h3>Test Score</h3>
+                    <div class="testSection">
+                        <div class="testScore testScoreDB">
+                            <h4 class="textRight paddingRight1">IDK</h4>
+                        </div>
+                    </div>
+                    <p class="textLeft">e.g., BookMarket</p>
+                </div>
+            </div>
+
+            <div class="subject-container w3-padding-32">
+                <div class="subject-text-container">
+                    <h2 class="textRight">Interface Design</h2>
+                    <h3>Test Score</h3>
+                    <div class="testSection">
+                        <div class="testScore testScoreID">
+                            <h4 class="textRight paddingRight1">94</h4>
+                        </div>
+                    </div>
+                    <p class="textRight">e.g., This Page..</p>
+                </div>
+                <div class="paddingLeft3">
+                    <img src="image/ico-vscode.svg" alt="" class="small-img">
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+        
+        <div class="timetable-container">
+            <h3 class="flex-center">TimeTable</h3>
+        </div>
+        <div class="w3-padding-32">
+            <div class="timeTableDiv">
+                <table class="timeTable">
+                    <tr>
+                        <td class="border-bottom border-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td class="timeTableDay border-bottom">월</td>
+                        <td class="timeTableDay border-bottom">화</td>
+                        <td class="timeTableDay border-bottom">수</td>
+                        <td class="timeTableDay border-bottom">목</td>
+                        <td class="timeTableDay border-bottom">금</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom  border-right">1교시<br>09:00 ~ 09:50</td>
+                        <td class="basicStats" rowspan="3">기초통계<br>이효재</td>
+                        <td class="lHJ" rowspan="2">알고리즘<br>이혜정</td>
+                        <td class="lHJ" rowspan="2">인터페이스<br>디자인<br>이혜정</td>
+                        <td class="kHO" rowspan="3">컴퓨터구조<br>(+운영체제)<br>김형오</td>
+                        <td class="poli" rowspan="3">[교양]<br>참인폴리텍</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom border-right">2교시<br>10:00 ~ 10:50</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom border-right">3교시<br>11:00 ~ 11:50</td>
+                        <td class="lHJ">JAVA기초<br>이혜정</td>
+                        <td class="lHJ">알고리즘<br>이혜정</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom border-right">4교시<br>12:00 ~ 12:50</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom border-right">5교시<br>12:50 ~ 1:40</td>
+                        <td class="lHJ" rowspan="2">JAVA기초<br>이혜정</td>
+                        <td class="pSK" rowspan="3">데이터베이스<br>팽성권</td>
+                        <td class="basicStats" rowspan="2">발명과창업<br>이효재</td>
+                        <td class="lHS" rowspan="2">산업안전관리<br>(정보보안)<br>이현순</td>
+                        <td class="poli" rowspan="3">[교양]<br>참인폴리텍</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom border-right">6교시<br>1:50 ~ 2:40</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom border-right">7교시<br>2:50 ~ 3:40</td>
+                        <td class="lHJ">인터페이스<br>디자인<br>이혜정</td>
+                        <td class="poli" rowspan="2">[교양] 영어</td>
+                        <td class="club" rowspan="3">동아리<br>(코딩, 자격증)</td>
+                    </tr>
+                    <tr>
+                        <td class="border-bottom border-right">8교시<br>3:50 ~ 4:40</td>
+                        <td class="project" rowspan="2">융합프로젝트</td>
+                        <td class="club" rowspan="2">동아리<br>(코딩, 자격증)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="border-right">9교시<br>4:50 ~ 5:40</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     </div>
 
     <!-- !PAGE CONTENT! -->
-    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+    <hr id="music">
+
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px; margin-top: 75px;">
 
         <!-- First Photo Grid-->
-        <div class="w3-row-padding w3-center" id="music">
+        <div class="w3-row-padding w3-center">
+            <h4 class="w3-padding-32"><b>Music is my life...</b></h4>
             <div class="w3-quarter">
                 <a href="https://www.youtube.com/playlist?list=OLAK5uy_lPdN-2_fn-35VD5I8PPuUwgtrrQAsl9vo"
                     target="_blank">
@@ -261,7 +544,7 @@
         <!-- Fifth Photo Grid-->
 
 
-        <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-row-padding w3-center">
             <div class="w3-quarter">
                 <a href="https://www.youtube.com/playlist?list=OLAK5uy_k7FTSn7ydw3cNY9X5w2UJYVO7fLXPDTik"
                     target="_blank">
@@ -297,7 +580,7 @@
         </div>
 
         <!-- Sixth Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-row-padding w3-center">
             <div class="w3-quarter">
                 <a href="https://www.youtube.com/playlist?list=OLAK5uy_kZkzZQQmU_be1URgFp9yEbQQZ1zwYiuIE"
                     target="_blank">
@@ -333,7 +616,7 @@
         </div>
 
         <!-- Seventh Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-row-padding w3-center">
             <div class="w3-quarter">
                 <a href="https://www.youtube.com/playlist?list=OLAK5uy_m6VFZd8KNhbFoHGRhtzFakGNVSkMMGvbU"
                     target="_blank">
@@ -416,124 +699,68 @@
         </div>
     </div>
 
-    <hr id="about">
-
-    <!-- About Section -->
-    <div class="w3-container w3-padding-32 w3-center">
-        <div class="flex-container">
-            <h3 class="flex-center">TimeTable</h3>
-        </div>
-        <div class="w3-padding-32">
-            <div class="timeTableDiv">
-                <table border="1" class="timeTable">
-                    <tr>
-                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td class="timeTableDay">월</td>
-                        <td class="timeTableDay">화</td>
-                        <td class="timeTableDay">수</td>
-                        <td class="timeTableDay">목</td>
-                        <td class="timeTableDay">금</td>
-                    </tr>
-                    <tr>
-                        <td>1교시<br>09:00 ~ 09:50</td>
-                        <td class="basicStats" rowspan="3">기초통계<br>이효재</td>
-                        <td class="lHJ" rowspan="2">알고리즘<br>이혜정</td>
-                        <td class="lHJ" rowspan="2">인터페이스<br>디자인<br>이혜정</td>
-                        <td class="kHO" rowspan="3">컴퓨터구조<br>(+운영체제)<br>김형오</td>
-                        <td class="poli" rowspan="3">[교양]<br>참인폴리텍</td>
-                    </tr>
-                    <tr>
-                        <td>2교시<br>10:00 ~ 10:50</td>
-                    </tr>
-                    <tr>
-                        <td>3교시<br>11:00 ~ 11:50</td>
-                        <td class="lHJ">JAVA기초<br>이혜정</td>
-                        <td class="lHJ">알고리즘<br>이혜정</td>
-                    </tr>
-                    <tr>
-                        <td>4교시<br>12:00 ~ 12:50</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>5교시<br>12:50 ~ 1:40</td>
-                        <td class="lHJ" rowspan="2">JAVA기초<br>이혜정</td>
-                        <td class="pSK" rowspan="3">데이터베이스<br>팽성권</td>
-                        <td class="basicStats" rowspan="2">발명과창업<br>이효재</td>
-                        <td class="lHS" rowspan="2">산업안전관리<br>(정보보안)<br>이현순</td>
-                        <td class="poli" rowspan="3">[교양]<br>참인폴리텍</td>
-                    </tr>
-                    <tr>
-                        <td>6교시<br>1:50 ~ 2:40</td>
-                    </tr>
-                    <tr>
-                        <td>7교시<br>2:50 ~ 3:40</td>
-                        <td class="lHJ">인터페이스<br>디자인<br>이혜정</td>
-                        <td class="poli" rowspan="2">[교양] 영어</td>
-                        <td class="club" rowspan="3">동아리<br>(코딩, 자격증)</td>
-                    </tr>
-                    <tr>
-                        <td>8교시<br>3:50 ~ 4:40</td>
-                        <td class="project" rowspan="2">융합프로젝트</td>
-                        <td class="club" rowspan="2">동아리<br>(코딩, 자격증)</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>9교시<br>4:50 ~ 5:40</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-
-            <h4 class="w3-padding-32"><b>Music is my life...</b></h4>
-
-        </div>
-    </div>
     <hr>
 
     <!-- Footer -->
     <footer class="w3-row-padding w3-padding-32">
-        <div class="w3-third">
-            <p>Major : AISW</p>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-            <p>180 75</p>
+        <div class="footerDiv">
+            <div class="w3-third">
+                <h3>My Team</h3>
+                <ul class="w3-ul w3-hoverable">
+                    <a href="https://tpdus751.github.io/" target="_blank">
+                        <li class="w3-padding-16">
+                            <span class="w3-large">박세연</span><br>
+                            <span>팀장 Algorithm</span>
+                        </li>
+                    </a>
+                    <a href="https://florencesy02.github.io/" target="_blank">
+                        <li class="w3-padding-16">
+                            <span class="w3-large">서영</span><br>
+                            <span>Back-End</span>
+                        </li>
+                    </a>
+                    <a href="https://sso05098.github.io/" target="_blank">
+                        <li class="w3-padding-16">
+                            <span class="w3-large">김범준</span><br>
+                            <span>Algorithm</span>
+                        </li>
+                    </a>
+                    <a href="https://je0ngaram.github.io/" target="_blank">
+                        <li class="w3-padding-16">
+                            <span class="w3-large">전가람</span><br>
+                            <span>Back-End</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            
+            <div class="w3-third w3-serif">
+                <h3>Interested In</h3>
+                <p>
+                    <span class="w3-tag w3-black w3-margin-bottom">PSH</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Music</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">TheWeeknd</span> 
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chan</span> 
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sein</span> 
+
+                    <span class="w3-tag w3-black w3-margin-bottom">Food</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Occident</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Wine</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chinese</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">고량주</span>
+
+                    <span class="w3-tag w3-black w3-margin-bottom">Sports</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Weight</span>
+                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ballin'</span>
+                    
+                </p>
+            </div>
         </div>
-
-        <div class="w3-third">
-            <h3>My Team</h3>
-            <ul class="w3-ul w3-hoverable">
-                <a href="">
-                    <li class="w3-padding-16">
-
-                        <span class="w3-large">Lorem</span><br>
-                        <span>Sed mattis nunc</span>
-                    </li>
-                </a>
-                <li class="w3-padding-16">
-                    <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-large">Ipsum</span><br>
-                    <span>Praes tinci sed</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w3-third w3-serif">
-            <h3>Interested In</h3>
-            <p>
-                <span class="w3-tag w3-black w3-margin-bottom">Music</span> <span
-                    class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Travel</span> <span
-                    class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Food</span>
-            </p>
-        </div>
-    </footer>
-
-    <!-- End page content -->
+        </footer>
+        
+        <!-- End page content -->
     </div>
-
+    
     <script>
         // Script to open and close sidebar
         function w3_open() {
